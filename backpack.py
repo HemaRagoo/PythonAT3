@@ -13,12 +13,12 @@ class BackPack:
 
     """
 
-    def __init__(self, item):
+    def __init__(self, items):
         self._backpack = []
-        if not isinstance(item, list):
+        if not isinstance(items, list):
             items = []
-        for item in item:
-            self._backpack.append(item)
+        for items in items:
+            self._backpack.append(items)
 
     def remove_item(self, item_name):
         if self.in_backpack(item_name) and self.in_backpack(item_name) != 0:
